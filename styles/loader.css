@@ -1,0 +1,51 @@
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color: rgba(51, 51, 51, 0.701);
+    padding-top: 12rem;
+}
+
+.loader-container h1 {
+    font-size: 3rem;
+    color: rgb(251, 251, 134);
+    text-shadow: 2px 2px 8px #555;
+}
+
+.loader-container p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: -1.5rem;
+    font-weight: 200;
+    font-style: italic;
+    color: rgb(252, 252, 192);
+    text-shadow: 2px 2px 12px #333;
+}
+
+.loader {
+    font-size: 3rem;
+    color: rgb(199, 199, 38);
+    animation: spin 1s linear infinite;
+
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg) scale(0.8);
+      opacity: 1;
+    }
+    50% {
+      transform: rotate(90deg) scale(1);
+      opacity: 0.5;
+    }
+    100% {
+        transform: rotate(180deg) scale(0.8);
+        opacity: 1;
+      }
+  }

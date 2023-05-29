@@ -1,0 +1,70 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(252, 252, 192);
+    padding: 1rem .5rem;
+    width: 90%;
+    max-width: 600px;
+    min-width: 300px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background-color: rgba(51, 51, 51, 0.8);
+    position: fixed;
+    top: 25%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    color: rgb(251, 251, 134);
+    text-shadow: 2px 2px 12px #333;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+}
+
+.mini-logo {
+    font-size: 2rem;
+    filter:drop-shadow(2px 2px 4px #555)
+}
+
+.welcome p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: .5rem;
+}
+
+.welcome button {
+    margin-top: 0rem;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(251, 251, 134);
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.welcome button:hover {
+    background-color: rgb(252, 252, 192);
+    color: #333;
+    transform: scale(1.05);
+}
+
+
+
+@media only screen and (max-width:899px) {
+
+    .welcome p {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: .5rem;
+}
+}
