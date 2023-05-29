@@ -1,18 +1,23 @@
 import React, { useState, useEffect } from 'react'
 import { BsCoin } from 'react-icons/bs'
+import { AppConsumer } from '../../context/AppContext'
 
 function Planner() {
-    const [amount, setAmount] = useState(null)
-    const [percent, setPercent] = useState(null)
-    const [custom, setCustom] = useState(false)
-    const [endDate, setEndDate] = useState(null)
-    const [calc, setCalc] = useState(null)
 
-    const currentDay = new Date().getDate()
-
-    const handlePress = (value) => {
-        setPercent(value)
-    }
+    const {
+      amount,
+      setAmount,
+      percent,
+      setPercent,
+      custom,
+      setCustom,
+      endDate,
+      setEndDate,
+      calc,
+      setCalc,
+      currentDay,
+      handlePress,
+    } = AppConsumer()
 
     useEffect(() => {
         if (amount > 0 && percent > 0 && endDate > 0) {

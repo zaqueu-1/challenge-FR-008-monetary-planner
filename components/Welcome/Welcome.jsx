@@ -1,7 +1,13 @@
 import React from 'react'
 import { BsCoin } from 'react-icons/bs'
+import { AppConsumer } from '../../context/AppContext'
 
-function Welcome({handleWelcome}) {
+function Welcome() {
+
+  const {
+    handleWelcome,
+  } = AppConsumer()
+
   return (
     <div data-aos="fade-up" data-aos-duration="900" className='welcome'>
       <div className="logo">

@@ -1,7 +1,12 @@
 import React, { useEffect } from 'react'
 import { BsCoin } from 'react-icons/bs'
+import { AppConsumer } from '../../context/AppContext'
 
-function Loader({setIsLoading}) {
+function Loader() {
+
+    const {
+      setIsLoading,
+    } = AppConsumer()
 
     useEffect(() => {
         const timeout = setTimeout(() => {

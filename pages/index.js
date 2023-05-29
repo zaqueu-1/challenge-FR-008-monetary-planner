@@ -3,7 +3,8 @@ import Bg from '../components/Bg/Bg'
 import Loader from '../components/Loader/Loader'
 import Welcome from '../components/Welcome/Welcome'
 import Planner from '../components/Planner/Planner'
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
+import { AppConsumer } from '../context/AppContext'
 import AOS from 'aos'
 
 export default function Home() {
@@ -12,12 +13,10 @@ export default function Home() {
     AOS.init()
   }, [])
 
-  const [isLoading, setIsLoading] = useState(true)
-  const [isWelcome, setIsWelcome] = useState(true)
-
-  const handleWelcome = () => {
-    setIsWelcome(false)
-  }
+  const {
+    isLoading,
+    isWelcome,
+  } = AppConsumer()
 
   return (
     <div>
@@ -30,11 +29,11 @@ export default function Home() {
       <main>
         <Bg />
         {isLoading ? (
-          <Loader setIsLoading={setIsLoading}/>
+          <Loader />
         ): null}
 
         {!isLoading & isWelcome ? (
-          <Welcome handleWelcome={handleWelcome}/>
+          <Welcome />
         ): null}
 
         {!isWelcome && (
