@@ -23,7 +23,7 @@
     color: white;
   }
   
-  input, select {
+  input{
     width: 70px;
     height: 2rem;
     margin: 0.5rem 0;
@@ -37,10 +37,18 @@
     background-color: transparent;
   }
 
-  select {
-    color:rgb(251, 251, 134);
+  .inp2 {
+    width: 135px;
+    height: 2rem;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
     border: none;
+    border-bottom: 1px solid  rgb(251, 251, 134);
+    font-size: .9rem;
+    font-weight: 400;
+    color:  rgb(251, 251, 134);
     outline: none;
+    background-color: transparent;
   }
 
   .controls {
@@ -83,6 +91,8 @@
   
   .day {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: .5rem;
     max-width: 600px;
     min-width: 300px;

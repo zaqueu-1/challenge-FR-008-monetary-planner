@@ -15,7 +15,7 @@ function Welcome() {
         <BsCoin className='mini-logo'/>
       </div>
 
-      <p>Aqui você poderá definir um valor a ser guardado até o fim do mês atual, sabendo exatamente o quanto deve gastar por dia para tornar isso possível!</p>
+      <p>Aqui você poderá definir um valor a ser guardado até determinada data, sabendo exatamente o quanto deve gastar por dia para tornar isso possível!</p>
         <button onClick={() => handleWelcome()}>Bora lá!</button> 
     </div>
   )

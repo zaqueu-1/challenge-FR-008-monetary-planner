@@ -9,7 +9,7 @@ const AppProvider = ({ children }) => {
     const [endDate, setEndDate] = useState(null)
     const [calc, setCalc] = useState(null)
 
-    const currentDay = new Date().getDate()
+    const currentDay = new Date()
 
     const handlePress = (value) => {
         setPercent(value)
